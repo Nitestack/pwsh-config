@@ -34,7 +34,8 @@ function which($command)
     Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
 }
 
-function Open-PowerShellConfig() {
+function Open-PowerShellConfig()
+{
   nvim.exe $env:USERPROFILE\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
 }
 Set-Alias psc Open-PowerShellConfig
