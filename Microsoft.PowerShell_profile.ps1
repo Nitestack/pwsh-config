@@ -41,4 +41,3 @@ function Open-PowerShellConfig()
   nvim.exe $env:USERPROFILE\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
 }
 Set-Alias psc Open-PowerShellConfig
-
