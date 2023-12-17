@@ -1,3 +1,5 @@
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\emodipt-extend.omp.json" | Invoke-Expression
+
 # Import the Chocolatey Profile that contains the necessary code to enable
 # tab-completions to function for `choco`.
 # Be aware that if you are missing these lines from your profile, tab completion
@@ -9,9 +11,9 @@ if (Test-Path($ChocolateyProfile))
   Import-Module "$ChocolateyProfile"
 }
 
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\emodipt-extend.omp.json" | Invoke-Expression
-
 Import-Module Terminal-Icons
+Import-Module Nvim-Switcher
+Import-Module Project-Manager
 
 # PSReadLine
 Set-PSReadLineOption -BellStyle None
@@ -40,4 +42,3 @@ function Open-PowerShellConfig()
 }
 Set-Alias psc Open-PowerShellConfig
 
-Import-Module Nvim-Switcher
