@@ -11,9 +11,11 @@ if (Test-Path($ChocolateyProfile))
   Import-Module "$ChocolateyProfile"
 }
 
+$powershell_dev_path = "$env:USERPROFILE\Documents\Programmierung\projects\powershell"
+
 Import-Module Terminal-Icons
-Import-Module Nvim-Switcher
-Import-Module Project-Manager
+Import-Module -Name $powershell_dev_path\Nvim-Switcher
+Import-Module -Name $powershell_dev_path\Project-Manager
 
 # PSReadLine
 Set-PSReadLineOption -BellStyle None
