@@ -15,16 +15,6 @@ $powershell_dev_path = "$env:USERPROFILE\Documents\Programmierung\projects\power
 
 Import-Module Terminal-Icons
 Import-Module -Name $powershell_dev_path\Nvim-Switcher
-Import-Module -Name $powershell_dev_path\Project-Manager
-
-# PSReadLine
-Set-PSReadLineOption -BellStyle None
-Set-PSReadLineKeyHandler -Chord "Ctrl+d" -Function DeleteChar
-Set-PSReadLineOption -PredictionViewStyle ListView
-
-# Fzf
-Import-Module PSFzf
-Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
 
 # Aliases
 Set-Alias grep findstr
